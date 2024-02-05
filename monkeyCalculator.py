@@ -1,10 +1,20 @@
-def calculateTime():
-    
-    # This first line is provided for you
+def calculateTime():       
+        # This first line is provided for you
     monkey_one = input("Is the first monkey smiling?:  ")
     monkey_two = input("Is the second monkey smiling?: ")
 
-    # end assignment
+    if monkey_one == "n" and monkey_two == "n":
+        print("Uh Oh! We're in trouble!")
+    elif monkey_one =="y" and monkey_two == "y":
+        print("Uh Oh! We're in trouble!")
+
+    elif monkey_one == "y" and monkey_two == "n":
+            print("Yay! We're going to have a good day!")
+    elif monkey_two == "y" and monkey_one == "n":
+            print("Yay! We're going to have a good day!")
+
+
+# end assignment
 
 
 ## If you want to test locally run > python monkeyCalculator.py
